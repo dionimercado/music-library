@@ -1,0 +1,21 @@
+<section>
+  <h1>Add Artist</h1>
+  <form action="/artist" method="POST">
+    <p>
+      <label>Name</label>
+      <input type="text" name="name" />
+    </p>
+    <p>
+      <input type="submit" value="Add artist" />
+    </p>
+  </form>
+</section>
+
+<section>
+  <h1>Artist list</h1>
+  <ul>
+    {{#each artists}}
+    <li>{{ArtistId}} - {{Name}} <a href="/artist/delete/{{ArtistId}}">Delete</a></li>
+    {{/each}}
+  </ul>
+</section>
