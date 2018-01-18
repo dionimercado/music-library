@@ -52,5 +52,11 @@ module.exports = route => {
     });
   });
 
+  // Albumn CRUD
+  route.get('/album', (req, res) => {});
+  route.get('/album', (req, res) => {});
+  route.get('/album', (req, res) => {});
+  route.get('/album', (req, res) => {});
+
   // return route;
 }
